@@ -71,9 +71,16 @@
 		<tr>
 			<td><strong>Curator of:</strong><br/></td>
 			<td>
-        <%= clade_selector 'user[curator_hierarchy_entry_id]', :value => @user.curator_hierarchy_entry_id %>
+        <%#= clade_selector 'user[curator_hierarchy_entry_id]', :value => @user.curator_hierarchy_entry_id %>
 			</td>
 		</tr>
+		<tr>
+		  <td><strong><%= "Credentials"[:credentials] %></strong></td>
+		  <td>
+            <%= f.text_area :credentials, :rows => 6 %>		
+		  </td>
+		</tr>
+		
 		<tr>
 			<td><strong>Curator Approved:</strong></td>
 			<td><%=f.check_box :curator_approved%> True</td> 
