@@ -25,6 +25,7 @@ $ERROR_LOGGING=true # set to true to record uncaught application errors in sql d
 $SHOW_SURVEYS=false # set to true to show surveys; logic on when to show surveys is set in the "show_survey?" method in the application controller
 $ENABLE_ANALYTICS=false 
 $ENABLE_RECAPTCHA=false # set to true to enable recaptcha on registration and contact us form
+$USE_SSL_FOR_LOGIN=false
 
 #$WEB_SERVICE_TIMEOUT_SECONDS=20 # how many seconds to wait when calling a webservice before timing out and returning nil
 $LOG_WEB_SERVICE_EXECUTION_TIME=true # if set to false, then execution times for web service calls will not be recorded
@@ -35,3 +36,5 @@ $LOG_WEB_SERVICE_EXECUTION_TIME=true # if set to false, then execution times for
 #   ActiveReload::ConnectionProxy.setup_for ActiveReload::MasterDatabase, ActiveRecord::Base
 #   ActiveReload::ConnectionProxy.setup_for SpeciesSchemaWriter, SpeciesSchemaModel          
 # end
+
+#Synthesis::AssetPackage.merge_environments = ["development", "production"] 
