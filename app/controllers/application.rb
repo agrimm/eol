@@ -371,7 +371,7 @@ end
   
   # send user to the SSL version of the page (used in the account controller, can be used elsewhere)
   def redirect_to_ssl
-     redirect_to :protocol => "https://" unless (request.ssl?) # or local_request?)
+     redirect_to :protocol => "https://" unless (request.ssl? or local_request?)
   end
   
   # send user back to the non-SSL version of the page
