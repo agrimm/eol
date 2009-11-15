@@ -194,7 +194,7 @@ The EOL code base uses metric_fu-1.0.2 to evaluate the overall code quality.
 In order to run the various metrics gems, an environment variable METRICS is required. This variable is observed if
 and only if the Rails environment RAILS_ENV=test.
 
-It is the team's opinion that metric-fu, and it's various dependencies, are system level tools (like ruby-debug) and
+It is the team's opinion that metric-fu, and its various dependencies, are system level tools (like ruby-debug) and
 should not be checked into the code base. A user or a CI server will require the installation of the
 jscruggs-metric_fu gem which properly install various dependencies such as flay, flog, reek, and roodi.
 
@@ -494,7 +494,7 @@ call.  They only work if called from "allowed" IPs (i.e. as specified in configu
 application level method "allowed_request" (which returns TRUE or FALSE).
 
   localhost:3000/expire_all    # expire all non-species pages
-  localhost:3000/expire_taxon/TAXON_ID  # expire specified taxon ID (and it's ancestors)
+  localhost:3000/expire_taxon/TAXON_ID  # expire specified taxon ID (and its ancestors)
   localhost:3000/expire_taxa/?taxa_ids=ID1,ID2,ID3 # will expire a list of taxon IDs (and their unique ancestors) specified in the querystring (or post) parameter "taxa_ids" (separate by commas)
   localhost:3000/clear_caches # expire all fragment caches (if supported by data store mechanism)
 
